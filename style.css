@@ -9,7 +9,10 @@ body {
 }
 
 .clock {
-    font-size: 15vw; /* Taille du texte basée sur 15% de la largeur de la fenêtre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(30px, 15vw, 150px); /* Redimensionne entre 30px et 150px selon la taille de la fenêtre */
     color: #000; /* Texte noir */
     text-shadow: none; /* Pas d'ombre sur le texte */
 }
