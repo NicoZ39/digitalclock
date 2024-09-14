@@ -9,7 +9,7 @@ body {
 }
 
 .clock {
-    font-size: 120px;
+    font-size: 15vw; /* Taille du texte basée sur 15% de la largeur de la fenêtre */
     color: #000; /* Texte noir */
-    text-shadow: none; /* Pas d'ombre sur le texte pour garder le noir pur */
+    text-shadow: none; /* Pas d'ombre sur le texte */
 }
