@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff; /* Fond blanc */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.clock {
+    font-size: 120px;
+    color: #000; /* Texte noir */
+    text-shadow: none; /* Pas d'ombre sur le texte pour garder le noir pur */
+}
