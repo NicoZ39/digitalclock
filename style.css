@@ -27,3 +27,6 @@ body {
     font-size: calc(7px + 5vw); /* Taille plus petite pour la date */
     color: #000;
 }
+#weekNumber {
+    font-size: calc(3px + 2vw); /* Taille encore plus petite pour le numéro de la semaine */
+}
