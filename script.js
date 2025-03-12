@@ -17,6 +17,17 @@ function updateClock() {
 
     document.getElementById('dayOfWeek').textContent = dayOfWeek.charAt(0).toUpperCase() + dayOfWeek.slice(1); // Majuscule au début
     document.getElementById('fullDate').textContent = fullDate;
+
+    // Numéro de la semaine
+    const weekNumber = getWeekNumber(now);
+    document.getElementById('weekNumber').textContent = `Semaine ${weekNumber}`;
+}
+
+// Fonction pour calculer le numéro de la semaine
+function getWeekNumber(date) {
+    const startDate = new Date(date.getFullYear(), 0, 1);
+    const days = Math.floor((date - startDate) / (24 * 60 * 60 * 1000));
+    return Math.ceil((days + startDate.getDay() + 1) / 7);
 }
 
 setInterval(updateClock, 1000);
